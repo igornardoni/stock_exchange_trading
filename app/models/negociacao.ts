@@ -1,27 +1,27 @@
 export class Negociacao {
-     private _data;       //   Criação dos atributos privados
-     private _quantidade;
-     private _valor;
+     private _data: Date;       //   Criação dos atributos privados
+     private _quantidade: number;
+     private _valor: number;
 
-    constructor(data, quantidade, valor) {
+    constructor(data: Date, quantidade: number, valor: number) {
         this._data = data;                   //   Criação dos valores
         this._quantidade = quantidade;
         this._valor = valor;
     }
 
-    get data() {
+    get data(): Date {
         return this._data;
     }
 
-    get quantidade() {
+    get quantidade(): Number {
         return this._quantidade;
     }
 
-    get valor() {
+    get valor(): Number {
         return this._valor;
     }
 
-    get volume() {
+    get volume(): Number {
         return this._quantidade * this._valor;
     }
 }
