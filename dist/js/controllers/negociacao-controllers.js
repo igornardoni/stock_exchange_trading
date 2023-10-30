@@ -18,6 +18,7 @@ export class NegociacaoController {
     adiciona() {
         const negociacao = this.criandoNegociacao();
         this.negociacoes.adiciona(negociacao);
+        negociacao.data.setDate(12); // Teste de privacidade do atributo data
         console.log(this.negociacoes.lista());
         this.limparFormulario();
     }

@@ -4,12 +4,14 @@ from datetime import datetime
 
 class Negociacao:
     
+    # Construtor ==>
     def __init__(self, data, quantidade, valor):
         self.__data = data
         self.__quantidade = quantidade
         self.__valor = valor
         
-    @property
+    # Getters ==>
+    @property   
     def data(self):
         return self.__data
     
